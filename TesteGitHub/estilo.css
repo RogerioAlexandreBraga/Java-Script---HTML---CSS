@@ -1,0 +1,12 @@
+h1 {
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(101, 126, 235);
+}
+
+p {
+    font-style: italic;
+    color: rgb(229, 241, 50);
+}
