@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <canvas width="600" height="500"></canvas>
+
+    <script>
+        var tela = document.querySelector("canvas");
+        var pincel = tela.getContext("2d");
+
+        pincel.fillStyle = ("green");
+        pincel.fillRect(0, 0, 50, 50);
+        pincel.strokeStyle = ("blue");
+        pincel.strokeRect(0, 0, 50, 50);
+
+        pincel.fillRect(55, 0, 50, 50);
+        pincel.strokeRect(55, 0, 50, 50);
+
+        pincel.fillRect(110, 0, 100, 50);
+
+        pincel.strokeRect(220, 0, 50, 50);
+
+        //
+
+        function desenhaQuadradoVerde(x, y, w, z) {
+
+        var tela2 = document.querySelector("canvas");
+        var pincel2 = tela2.getContext("2d");
+
+        pincel2.fillStyle = ("yellow");
+        pincel2.fillRect(x, y, w, z);
+        pincel2.strokeStyle = ("red");
+        pincel2.strokeRect(x, y, w, z);
+        }
+
+        desenhaQuadradoVerde(0, 55, 50, 50);
+        desenhaQuadradoVerde(0, 110, 50, 50);
+        desenhaQuadradoVerde(60, 170, 50, 50);
+        desenhaQuadradoVerde(120, 230, 150, 50);
+        desenhaQuadradoVerde(0, 300, 50, 50);
+
+        //
+
+        function desenhaQuadrado(x, y, cor) {
+        var tela3 = document.querySelector("canvas");
+        var pincel3 = tela3.getContext("2d");
+
+        pincel3.fillStyle = cor;
+        pincel3.fillRect(x, y, 50, 50);
+        pincel3.strokeStyle = ("red");
+        pincel3.strokeRect(x, y, 50, 50);
+        }
+
+        desenhaQuadrado(55, 300, "blue");
+        desenhaQuadrado(200, 350, "red");
+        desenhaQuadrado(0, 400, "black");
+
+    </script>
+
+</body>
+
+</html>

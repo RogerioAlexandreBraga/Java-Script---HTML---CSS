@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        function calculaImc (altura, peso) {
+            var imc = peso / (altura * altura);
+            return imc;
+        }
+        var imcPessoa1 = calculaImc ( 1.77, 77);
+        var imcPessoa2 = calculaImc ( 1.60, 70);
+        var imcPessoa3 = calculaImc ( 1.55, 65);
+
+        mostra (imcPessoa1);
+        mostra (imcPessoa2);
+        mostra (imcPessoa3);
+    </script>
+</body>
+</html>

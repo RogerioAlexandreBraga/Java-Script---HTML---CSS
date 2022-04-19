@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function pulalinha() {
+        document.write("<br>");
+    }
+
+    function mostradescobrimentDoBrasil(frase) {
+        document.write(frase);
+        pulalinha();
+    }
+
+    function mostrasurgimentoDeCadaGeracao(frase) {
+        document.write(frase);
+        pulalinha();
+    }
+
+    function mostraTotalDeGeracoes(frase) {
+        document.write(frase);
+        pulalinha();
+    }
+
+
+    var descobrimentDoBrasil = 1500;
+    var surgimentoDeCadaGeracao = 28;
+    var anoHoje = 2022;
+
+    mostradescobrimentDoBrasil ("Ano do inicio da geração Brasileira: " + descobrimentDoBrasil);
+    mostrasurgimentoDeCadaGeracao ("Surgimento médio de cada geração: " + surgimentoDeCadaGeracao + " anos.");
+    mostraTotalDeGeracoes ("O total de geraçõs até hoje é de: " + (anoHoje - descobrimentDoBrasil) / Math.round(surgimentoDeCadaGeracao) + " anos.");
+
+</script>
+</body>
+</html>
